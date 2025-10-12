@@ -16,4 +16,4 @@ WORKDIR /root
 
 COPY --from=builder /app/main .
 
-ENTRYPOINT [ "./main" ]
+ENTRYPOINT ["./main"]
