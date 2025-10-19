@@ -13,10 +13,12 @@ const LoginPage = () => {
     setError('');
 
     // Validate credentials
-    if (username === 'bookstoreadmin' && password === 'ManageBook68') {
+    //if (username === 'bookstoreadmin' && password === 'ManageBook68') {
+    if (username === 'mon' && password === '123') {
       // Store authentication token/flag
       localStorage.setItem('isAdminAuthenticated', 'true');
-      navigate('/store-manager/add-book');
+      navigate('/store-manager/all-books');
+      //navigate('/store-manager/add-book');
     } else {
       setError('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง');
     }
