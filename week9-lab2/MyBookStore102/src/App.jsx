@@ -15,7 +15,8 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import LoginPage from './pages/LoginPage';
 import AddBookPage from './pages/AddBookPage';
-import AllBooksPage from './pages/AllBooksPage';
+//import AllBooksPage from './pages/AllBooksPage';
+import ListPage from './pages/ListPage';
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
                 <Route path="/categories/:category" element={<CategoryPage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
-                <Route path="/store-manager/all-books" element={<AllBooksPage />} />
+                <Route path="/store-manager/all-books" element={<ListPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
